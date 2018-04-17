@@ -1,0 +1,19 @@
+# REQUEST
+
+# Address of the I2C slave
+uint8   slaveAddress
+
+# number of bytes to be read from the slave
+uint8   bytesToRead
+
+# Data to be send to the slave
+uint8[] dataIn
+
+---
+
+# RESPONSE
+
+# Data returned by the slave device. Its
+# length is determined by bytesToRead parameter
+# in the request
+uint8[] dataOut
